@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.persona">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/personahat"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/personahat"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PERSONA">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Notepad.notedetails"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity android:name=".Notepad.EditNotes"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Notepad.MainNotes"/>
+        <activity android:name=".Notepad.NewNote"/>
+        <activity android:name=".Login.RegisterNewUser"/>
+        <activity android:name=".Login.ResetPass"/>
+        <activity android:name=".NavMenu"/>
+        <activity android:name=".ChatroomBot.ChatRoom"/>
+        <activity android:name=".Login.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

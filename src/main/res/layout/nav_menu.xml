@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/aldrich"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/profileemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=" : "
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/userfullname"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/useremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/profileemail"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/fullNameuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=" : "
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/welcome"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/userfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/fullNameuser"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/ageprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Age :"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/useremail"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/userage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/ageprofile"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <include layout="@layout/nav_drawer" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
