@@ -1,0 +1,38 @@
+{
+  "Notes" : {
+    "2tRBUOCD3udK4qAsoyQ6vxHS6Nz2" : {
+      "-MdvfMk0f4XWewhV_dO-" : {
+        "content" : "migo",
+        "timestamp" : 1625572605187,
+        "title" : "hola"
+      },
+      "-Me-raax30P83BMMNYuB" : {
+        "content" : "watashiwa kita",
+        "timestamp" : 1625659698055,
+        "title" : "im here"
+      },
+      "-MeP84J0l70rE2TOMmvC" : {
+        "content" : "yahahaha",
+        "timestamp" : 1626083710434,
+        "title" : "test"
+      }
+    }
+  },
+  "Users" : {
+    "2tRBUOCD3udK4qAsoyQ6vxHS6Nz2" : {
+      "age" : "20",
+      "email" : "keziaiv@yahoo.co.id",
+      "fullname" : "Moomoo"
+    },
+    "ibslq19KmJNyg7XVp4Syar0LZzJ3" : {
+      "age" : "21",
+      "email" : "rahmanazeem16@gmail.com",
+      "fullname" : "azeem"
+    },
+    "vqSgVAPas8bN8iNapCS5cgTkOfd2" : {
+      "age" : "16",
+      "email" : "streezzz27@gmail.com",
+      "fullname" : "rahman"
+    }
+  }
+}
